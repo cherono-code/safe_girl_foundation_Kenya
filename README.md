@@ -57,7 +57,3 @@ Policy advocacy targeted at national and regional policies relevant to the local
 Conclusion
 
 The Portfolio Project aims to create meaningful change by addressing complex social and environmental challenges in Kenya. While acknowledging its limitations, the project remains committed to its objectives and the well-being of the communities it serves.
-
-For more information, please visit our website or contact us directly.
-
-Thank you for your interest in the Portfolio Project! Together, we can make a difference.
