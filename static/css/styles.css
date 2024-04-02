@@ -1,0 +1,959 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  background-color: #356374;
+  font-style: Roboto;
+}
+
+nav {
+  position: relative;
+  margin-left: 500px;
+}
+
+nav ul {
+  float: right;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+  /*margin: 0 10px; */
+  position: relative;
+  /* line-height: 80px; */
+}
+
+nav ul li a {
+  color: #FACF39;
+  font-weight: bold;
+}
+
+ header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+.logo img{
+  width: 200px;
+  height: 60px;
+}
+
+.logo {
+  /* width: 200px;
+  height: 55px; */
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  margin-left: 0px;
+  text-align: left;
+  left: 0;
+  right: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+}
+
+.sliders {
+  overflow: hidden;
+  width: 100%;
+}
+
+.slides {
+  background-color: #FACF39;
+  margin: 0;
+  padding: 0;
+  height: 500px;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+  width: 100%;
+  height: auto;
+}
+
+.whoweare {
+  background-color: #254551;
+  color: #ffff;
+  height: 500px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.title1 h1 {
+  background-color: #254551;
+  color: #FACF39;
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.whoweare1 {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.cont1 {
+  background-color: transparent;
+
+}
+
+.cont2 {
+  background-color: transparent;
+}
+
+.cont2 p {
+  background-color: transparent;
+  margin-left: 30px;
+  padding: 20px;
+}
+
+.cont2 button {
+  background-color: #FACF39;
+  width: 100px;
+  height:40px;
+  color: black;
+  margin-top: 250px;
+  margin-left: 700px;
+  padding: 0px;
+  font-weight: bold;
+}
+
+.cont1 img {
+  width:600px;
+  height: 400px;
+  background-color: transparent;
+  border-radius: 8px;
+  margin-left: 20px;
+  margin-top: 0;
+}
+
+.initiatives {
+  width: 100%;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+}
+
+.initiatives h1{
+  color: #FACF39;
+  background-color: transparent;
+  margin-left: 10px;
+  padding: 10px;
+}
+
+.initiatives button { 
+  background-color: #FACF39;
+  width: 200px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: 20px;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  text-decoration: none; /* Remove the default underline for the link */
+  outline: none; /* Remove the default outline */
+  cursor: pointer; 
+
+}
+
+.initiatives_content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.container1, .container2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+.container1 img, .container2 img {
+    width: 600px;
+    height: 450px;
+    padding: 50px;
+    border-radius:10px;
+} 
+
+.vision {
+  background-color: #254551;
+  color: #ffff;
+  height: 350px;
+  width: 100%;
+  padding-top: 150px;
+  text-align: center;
+  overflow: hidden;
+
+}
+
+.vision p {
+  background-color: transparent;
+  margin-bottom: 10px;
+  padding: 20px;
+  line-height: 1.5;
+}
+
+.vision h1{
+  background-color: transparent;
+  color: #FACF39;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.impact {
+  background-color: #FACF39;
+  color: #254551;
+  height: 550px;
+  width: 100%;
+  margin: 0;
+}
+
+.impact h1 {
+  background-color: transparent;
+}
+
+.impact_content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #FACF39;
+  padding: 20px;
+}
+
+.impact_content img {
+  width: 150px;
+  height: 150px;
+  background-color: transparent;
+}
+
+.counseling ul li , .STEM ul li, .ENTREPRENUERSHIP ul li, .advocacy ul li{
+  background-color: #FACF39;
+  line-height: 1.5;
+}
+.impact_content div{
+  background-color: transparent;
+}
+/*
+.impact_content ul li {
+  background-color: #FACF39;
+  line-height: 1.5;
+}
+*/
+
+.counseling ul, .STEM ul, .ENTREPRENUERSHIP ul, .advocacy ul {
+  list-style-type: disc; 
+  margin-bottom: 10px;
+  color: #254551;
+  background-color: transparent;
+}
+
+.counseling li, .STEM li, .ENTREPRENUERSHIP li, .advocacy li { 
+  margin-bottom: 5px;
+  background-color: transparent;
+}
+/*
+.impact_content li {
+  margin-left: 20px; 
+  background-color: transparent;
+}
+*/
+.main{
+  margin-left: 100px;
+  margin-top: 0px;
+  color: #ffffff;
+}
+
+.blog {
+  background-color: #254551;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column; /* Stack items vertically by default */
+}
+
+.blog0 {
+  display: flex;
+  justify-content: space-between; /* Spaced evenly along the main axis */
+  background-color: transparent;
+  /*align-items: center;Center items along the cross axis */
+}
+
+.blog0 button, .blog button a {
+  background-color: #FACF39;
+  padding:0px;
+  margin-left: auto;
+  margin-right: 20px;
+  font-weight: bold;
+  align-items: center;
+  text-align: center;
+  color: #356374;
+  text-decoration: none; /* Remove the default underline for the link */
+  border: none; /* Remove default button border */
+  outline: none; /* Remove the default outline */
+  cursor: pointer; 
+}
+
+.blog0 button{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.blog0 h1 {
+  /* margin: 0; Remove default margin for the h1 element */
+  color: #FACF39;
+  background-color: transparent;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.blog1, .intro1{
+ /* flex-grow: 1; */
+  display: flex;
+  justify-content: space-evenly; /* Spaced evenly along the main axis */
+  background-color: #254551;
+  /*align-items: stretch;*/
+}
+
+
+.blog1 img {
+  /*flex-grow: 1;*/
+  width: 600px;
+  height: 450px;
+  border-radius: 8px;
+  background-color: transparent;
+  margin: 5 0px;
+}
+
+.announcements {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 600px;
+}
+
+.announce_cont1 button {
+  width: 65px;
+  height: 40px;
+  background-color: #FACF39;
+}
+
+.announce_img {
+  width: 700px;
+  height: 350px;
+  border-radius: 8px;
+  margin-left: 20px; /* Adjust the margin as needed */
+}
+
+.bttn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FACF39;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  width: 900px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto; /* Corrected this line */
+} 
+
+.bttn button {
+  background-color: transparent;
+  border: none;
+  color: black;
+}
+
+.announce_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.announce_cont1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 0px;
+}
+
+.announce_cont1 p {
+  color: #ffff;
+  padding: 20px;
+}
+
+.announce_cont1 button {
+  width: 100px;
+  height: 40px;
+  background-color: #FACF39;
+  margin-left: 20px;
+  margin-top: 350px;
+  font-weight: bold;
+}
+
+.announce_img {
+  width: 800px;
+  height: 450px;
+  border-radius: 8px;
+  margin-right: 50px;
+}
+
+.show-more {
+  margin-top: 0px;
+  margin-right: auto;
+  margin-left: 50px;
+  color: #FACF39;
+  text-decoration: none;
+}
+
+.info {
+  background-color: #aaabab; /* Remove the extra 'a' */
+  height: 150px;
+  width: 100%;
+  display: flex;
+}
+
+.info1,
+.info2,
+.info3 {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #ffff;
+  background-color: #aaabab;
+}
+
+
+.info1 p, .info1 p a, .info2 p, .info3 button{
+ background-color: #aaabab;
+ color: #ffffff;
+} 
+
+
+.info3 button{
+  background-color: #FACF39;
+  color:#254551;
+  height: 50px;
+  width: 150px;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.footer{
+  background-color: #15272e;
+  text-align: center;
+  font-size: smaller;
+  width: 100%;
+  height: 30px;
+}
+
+.footer p {
+  background-color: transparent;
+  color: #ffffff;
+  text-align: center;
+}
+
+.cont_aboutus, .board, .contactus{
+  display: flex;
+  justify-content: space-between; /* This will place .aboutus and .ourmission on opposite ends */
+  align-items: center; /* This will vertically center the items */
+}
+
+.aboutus, .ourmission {
+  width: 48%; /* Adjust the width as needed, leaving some space between the items */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+
+.aboutus img {
+  width: 700px;
+  height: 450px; 
+  margin-left: 10px;
+  border-radius: 8px;
+}
+
+.aboutus p , .ourmission p {
+  color: #ffffff;
+  margin-left: 10px;
+}
+.aboutus h1 {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.aboutus h1 , .ourmission h1 {
+  color:#FACF39
+}
+.ourmission img {
+  width: 650px;
+  height: 400px; 
+  margin-left: 10px;
+  border-radius: 8px;
+}
+
+.roles {
+  background-color: #254551;
+  width: 100%;
+  height: 450px;
+}
+
+.roles h1, .staff {
+  color: #FACF39;
+  background-color: #254551;
+}
+
+
+.roles0 figure, .roles0 figcaption, .roles1 figure, .roles1 figcaption{
+  background-color: transparent;
+  text-align: center;
+}
+.specific_role0,
+.specific_role1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px; /* Adjust as needed for spacing between sections */
+  background-color: transparent;
+}
+
+.specific_role1 {
+  margin-top: 0;
+  width: 100%;
+  height: 500px;
+  background-color: #254551;
+  color: #ffffff;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.roles0,
+.roles1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #ffffff;
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.roles0 img,
+.roles1 img {
+  width: 300px; /* Adjust image width as needed */
+  height: 300px; /* Adjust image height as needed */
+  margin-bottom: 10px; /* Adjust as needed for spacing between images along the Y-axis */
+  margin-left: 40px;
+  background-color: transparent;
+}
+.leadstaff {
+  color: #FACF39;
+  width: 80%;
+  height: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #254551;
+}
+
+.bns {
+  width: 100%;
+  height: 120px;
+}
+
+.bns h1{
+  color: #FACF39;
+}
+
+.bns p{
+  color: #ffffff;
+}
+
+.national_board{
+  color: #ffffff;
+  margin-left: 300px;
+}
+
+.advisory_board{
+  color:#ffffff;
+  margin-right: 300px;
+  margin-top: 0;
+}
+
+.national_board h2, .advisory_board h2{
+  color: #FACF39;
+}
+
+.sponh1{
+  background-color: #254551;
+  color: #FACF39;
+}
+.sponsors{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  background-color: #254551;
+}
+
+.sponsors img{
+  width: 300px;
+  height: 300px;
+}
+.contact1 h1{
+  color: #FACF39;
+}
+
+.contact1{
+  color:#ffffff;
+  width: 100%;
+  margin-left: 20px;
+}
+.contact1 img{
+  width: 500px;
+  height: 300px; 
+  margin-left: 10px;
+  border-radius: 8px;
+}
+
+.contact-form {
+  width: 1000px;
+  height: 500px;
+  margin-right: 50px;
+  padding: 20px;
+  background-color: #FACF39;
+  color: #254551;
+  border-radius: 8px;
+  border: 2px solid #fff; /* Add this line for the border */
+}
+
+.contact-form::before {
+  content: "Leave us a message"; 
+  display: block; 
+  font-size: 18px; 
+  font-weight: bold;
+  margin-bottom: 10px; 
+}
+
+.form-group, .form-group1{
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #FACF39;
+  color: #fff;
+}
+
+.form-group input, .form-group1 input{
+  background-color: #254551;
+  color: #ffffff;
+
+}
+
+.form-group3 {
+  background-color: #FACF39;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.form-group3 label{
+  background-color: transparent;
+}
+
+.form-group3 textarea{
+  background-color: #254551;
+  width: 350px;
+  height: 200px;
+  color: #ffffff;
+}
+
+input {
+  width: auto;
+  padding: 8px;
+  border: 1px solid; 
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+/*
+input {
+  background-color: transparent;
+}
+*/
+.form-group label,
+.form-group1 label {
+  margin-bottom: 10px; /* Adjust the margin as needed */
+  background-color: #FACF39;
+}
+
+.form-group input,
+.form-group1 input,
+.form-group3 textarea {
+  margin-bottom: 10px; /* Adjust the margin as needed */
+}
+.form-group4 input{
+  color: #ffffff;
+  background-color: #254551;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-group, .form-group1, .form-group3, .form-group4 {
+  background-color: #FACF39;
+}
+
+/*textarea {
+  height: 100px;
+  background-color: #254551 ;
+}*/
+
+/*input[type="submit"] {
+  background-color: #fff;
+  color: #254551;
+  cursor: pointer;
+} */
+.cont_donate button{
+  background-color: #FACF39;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  font-weight: bold;
+}
+
+.don_title {
+  color: #FACF39;
+  margin-left: 20px;
+  padding: 10px;
+}
+
+.about_donation img {
+  margin-top: 20px;
+  width: 500px;
+  height: 350px; 
+  margin-left: 30px;
+  border-radius: 8px;
+}
+
+.donation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; 
+  width: 100%;
+  height: auto;
+  
+}
+
+.about_donation {
+  background-color: #254551;
+  width: 50%;
+  margin-left: 50px;
+  border-radius: 8px;
+}
+
+.about_donation p {
+  color: #ffffff;
+  font-size: medium;
+  background-color: transparent;
+  margin-left: 10px;
+  line-height: normal;
+  line-height: 1.5;
+}
+
+.about_donation ol {
+  list-style-type:lower-roman; /* Use decimal numbering */
+  margin: 20px 0; /* Add some margin for better spacing */
+  padding-left: 20px; /* Add padding to align text with the numbering */
+  background-color: transparent;
+}
+
+/* Style for the list items */
+.about_donation ol li {
+  margin-bottom: 10px; /* Add spacing between list items */
+  font-size: 16px; /* Adjust font size */
+  line-height: 1.5; /* Set line height for better readability */
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.about_donation h3{
+  color: #FACF39;
+  background-color: transparent;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.personal_info {
+  flex: 1; /* Add this to make personal_info take the remaining space */
+  padding: 20px; /* Add padding for better spacing */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.personal_info h1{
+  color: #FACF39;
+  margin-top: 0px;
+}
+
+.donation-form{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+/* Add some spacing between each row */
+.donation-form label {
+  /*margin-bottom: 10px; /* Adjust the value based on your preference */
+  margin-left: 30px;;
+  display: flex;
+  /*flex-direction: ;
+  justify-content: flex-start;*/
+  color: #ffffff;
+}
+
+
+.donation-form input{
+  /*margin-bottom: 10px; /* Adjust the value based on your preference */
+  margin-left: 70px;
+  display: flex;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  /*flex-direction: column;
+  justify-content: flex-end;*/
+  color: #254551
+}
+/* Add some spacing between buttons and radio inputs */
+.donation-form h2, button, input[type="radio"], input[type="text"] {
+  margin-bottom: 10px; /* Adjust the value based on your preference */
+}
+
+.donation-form h2{
+  color:#FACF39;
+}
+
+.donor_options div{
+  display: inline;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Apply the class to the container */
+.donation-form .right-input-container {
+  width: 300px; /* Adjust the width based on your preference */
+  /* You can set a fixed width or use a percentage */
+}
+
+.donation_dollar label, .donation_dollar input{
+  display: inline-block;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.dollar{
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.donation_button button{
+  background-color: #FACF39;
+  width: 150px;
+  height: 30px; 
+  list-style: none;
+}
+
+.donor_button input{
+  background-color: #FACF39;
+  color:#254551;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 70px;
+  height: 30px;
+}
+
+.donor-wall h3{
+  color: #FACF39;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.donor-wall p{
+  color: #ffffff;
+  margin-left: 20px;
+  margin-bottom: 20px;
+} 
+.intro{
+  background-color: #254551;
+  width: 100%;
+  height: 650px;
+  margin-top: 20px;
+}
+
+.intro1 img, intro2 img{
+  margin-top: 20px;
+  width: 600px;
+  height: 450px;
+  border-radius: 8px;
+  background-color: transparent;
+}
+.intro h1 {
+  background-color: #254551;
+  color: #FACF39;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+.intro0 {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  background-color: transparent;
+  margin-bottom: 20px;
+}
+.intro1, .intro2{
+  background-color: #254551;
+}
+
+.coming_soon{
+  margin-top: 20px;
+  align-items: centre;
+  height: 100%;
+}
+
+.changecolorbutton {
+  margin-left: auto;
+  margin-right: auto;
+  color:#254551;
+  font-weight: bold;
+  background-color: #FACF39;
+  width: 170px;
+  height: 40px;
+}
+

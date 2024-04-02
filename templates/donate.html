@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial scale=1.0">
+        <meta name="keyword" content="safe, girl, foundation, kenya">
+        <title>SAFEGIRL FOUNDATION | KENYA</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    </head>
+    <body>
+    <header>
+        <div class="main">
+            <div class="logo">
+            <a><img src="{{ url_for('static', filename='images/safegirllogo.jpg') }}" width="200px" height="60px" alt="our logo"></a>
+            </div>
+            <div class="navlinks">
+                <nav>
+                <ul>
+                    <li><a href="{{ url_for('home') }}">HOME |</a></li>
+                    <li><a href="{{ url_for('about_us') }}">ABOUT US|</a></li>
+                    <li><a href="{{ url_for('safe_girl_center') }}">SafeGirl CENTER |</a></li>
+                    <li><a href="{{ url_for('impact') }}">IMPACT |</a></li>
+                    <li><a href="{{ url_for('events') }}">EVENTS |</a></li>
+                    <li><a href="{{ url_for('our_books') }}">OUR BOOKS |</a></li>
+                    <li><a href="{{ url_for('donate') }}">DONATE |</a></li>
+                    <li><a href="{{ url_for('blog') }}">BLOG</a></li>
+                </ul>
+                </nav>
+            </div>
+        </div>
+        </header>
+        <main>
+            <section>
+                <div class="don_title">
+                <h1>Sponsor a Girl at SafeGirl Center<h1>
+                </div>
+                    <div class="donation">
+                    <div class="about_donation">
+                        <img src="{{ url_for('static', filename='images/aboutus/IMG-20180714-WA0018.jpg') }}" alt="about donations">
+                        <p>Imagine a world where mental health support is accessible to all, where communities thrive through sustainable practices, and where the potential of every young mind is nurtured. This vision is not a distant dream – it's the heartbeat of Safe Girl Foundation Kenya, a transformative initiative addressing multifaceted social and environmental challenges.</p>
+                        <h3>Why Your Support Matters:</h3>
+                        <ol>
+                            <li>Empowering Minds: Your donation will break down barriers to mental health support. Many in Kenya silently battle mental health issues, hindered by limited access and stigma. Your contribution can fund counseling services, providing a lifeline to those in need and reducing the stigma surrounding seeking help.</li>
+                            <li>Greening Our Future: Climate change affects us all. Your support fuels tree-planting initiatives, education on sustainable practices, and advocacy for stronger environmental policies. Together, we can combat deforestation and environmental degradation, creating a greener, more sustainable future.</li>
+                            <li>Igniting Potential: Kenyan youth deserve opportunities. Your donation can empower them with STEM education, mentorship, and scholarships, preparing the next generation for impactful careers. Let's bridge the gap and provide the tools for success.</li>
+                            <li>Breaking the Silence: Gender-Based Violence is pervasive. Your contribution supports comprehensive support for victims, awareness campaigns, and advocacy for policy changes. Together, we can stand against GBV, offering hope and a path to recovery.</li>
+                            <li>Ensuring Sustainability: Non-profits face financial challenges. Your support helps diversify funding sources, ensuring Safe Girl Foundation Kenya's long-term impact. By contributing, you become a cornerstone for financial stability and a force for lasting change.</li>
+                        </ol>
+                        <h3>How You Can Make a Difference:</h3>
+                        <p>Donate Today: Your financial support, no matter the size, directly contributes to these vital initiatives. Every dollar makes a difference.</p>
+                        <p>Spread the Word: Share Safe Girl Foundation Kenya's mission with your network. Your voice amplifies our reach and impact, turning one donation into a collective force for change.</p>
+                        <p>Join Us: Become a part of Safe Girl Foundation Kenya's community. Your involvement as a volunteer or advocate strengthens our efforts and brings us one step closer to our goals.</p>
+                        <h3>Together, We Are the Change:</h3>
+                        <p>The challenges we tackle are complex, but your support propels us forward. Join Safe Girl Foundation Kenya in creating lasting solutions, empowering individuals, and transforming communities in Kenya. Together, we can be the change we wish to see in the world.</p>
+                        </div>
+                <div class="personal_info">
+                <h1>Personal Information</h1>
+                 <!-- Donation Form -->
+                 <div class="donation-form">
+                 <form id="donationForm" action="/saveDonor" method="post">
+                    <label for="FirstName">First Name:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                    <br>
+                    <label for="LastName">Last Name:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                    <br>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber">
+                    <br>
+                    <label>Donation Type:</label>
+                    <br>
+                    <div class="donor_options">
+                        <div>
+                    <input type="radio" id="anonymous" name="donationType" value="anonymous">
+                    <label for="anonymous">Make donation anonymously</label>
+                    </div>
+                    <br>
+                    <div>
+                    <input type="radio" id="company" name="donationType" value="company">
+                    <label for="company">This donation is on behalf of a company</label>
+                    </div>
+                    <br>
+                    </div>
+                    <label for="CompanyName">Company Name:</label>
+                    <input type="text" id="companyName" name="companyName" required>
+                    <br>
+                    <label for="creditCardNumber">Credit Card Number:</label>
+                    <input type="text" id="creditCardNumber" name="creditCardNumber" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+                    <br>
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="XXX" required>
+                    <br>
+                    <label for="expirationDate">Credit Card Expiration Date (MM/YY):</label>
+                    <input type="text" id="expirationDate" name="expirationDate" placeholder="MM/YY" required>
+                    <br>
+                    <label for="billingPostalCode">Billing Postal Code:</label>
+                    <input type="text" id="billingPostalCode" name="billingPostalCode" required>
+                    <br>
+                    <h2>Choose Amount</h2>
+                    <div class="donation_button">
+                        <button type="button" id="oneTimeDonation" onclick="showDonationOptions('oneTime')">One Time Donation</button>
+                        <button type="button" id="monthlyDonation" onclick="showDonationOptions('monthly')">Monthly Donation</button>
+                    <div>
+                    <div class="donation_dollar">
+                        <div class="dollar">
+                        <input type="radio" id="donation55" name="donationAmount" value="55">
+                        <label for="donation55">USD$55</label>
+                        </div>
+                        <div class="dollar">
+                        <input type="radio" id="donation25" name="donationAmount" value="25">
+                        <label for="donation25">USD$25</label>
+                        </div>
+                        <div class="dollar">
+                        <input type="radio" id="donation45" name="donationAmount" value="45">
+                        <label for="donation45">USD$45</label>
+                        </div>
+                        <div class="dollar"></div>
+                        <input type="radio" id="donation200" name="donationAmount" value="200">
+                        <label for="donation200">USD$200</label>
+                        </div>
+                        <div class="dollar">
+                        <input type="radio" id="customAmount" name="donationAmount" value="custom">
+                        <label for="customAmount">Custom Amount:</label>
+                        <input type="text" id="customAmountInput" name="customAmount" placeholder="Enter custom amount">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="donor_button">
+                    <input type="submit" value="Donate">
+                    </div>
+                </form>
+                </div>
+                </div>
+                </div>
+                
+                <!-- Donor Wall -->
+                <div class="donor-wall" id="donorsList">
+                    <h3>Donor Wall</h3>
+                    <p>Thank you to our generous supporters:</p>
+                    {% for donor in donors %}
+                    <li>{{ donor }}</li>
+                    {% endfor %}
+                </div>
+    </section>
+
+            <hr class="leadstaff">
+            <div class="intro">
+                <h1>About Us</h1>
+                <div class="intro0">
+                    <div class="intro1">
+                        <img src="{{ url_for('static', filename='images/slides/bg.jpg') }}" alt="about donate">
+                    <div class="intro2">
+                        <img src="{{ url_for('static', filename='images/aboutus/IMG_20180810_091705_6.jpg') }}" alt="all about us">
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+        <div class="info">
+            <div class="info1">
+            <p><a href="{{ url_for('about_us') }}">About Us</a>| <a href="{{ url_for('about_us') }}">Contact Us</a>| <a href="privacypolicy.html">Privacy Policy</a></p>
+            </div>
+            <div class="info2">
+            <p>SafeGirl Foundation is a community based charitable organisation</p>
+                <p>SafeGirl Foundation Kenya</p>
+                <p>P.O Box 1398-20100</p>
+                <p>Nakuru, Kenya</p>
+            </div>
+            <div class="info3">
+                <a target="_blank" href="{{ url_for('donate') }}"><button>Make a Donation</button></a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <p>SafeGirl Foundation, 2024, All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

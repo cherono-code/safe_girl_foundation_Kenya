@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="safe, girl, foundation, kenya">
+    <title>SAFEGIRL FOUNDATION | KENYA</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <a><img src="{{ url_for('static', filename='images/safegirllogo.jpg') }}" alt="our logo"></a>
+            </div>
+            <div class="navlinks">
+                <nav>
+                    <ul>
+                        <li><a href="{{ url_for('home') }}">HOME |</a></li>
+                        <li><a href="{{ url_for('about_us') }}">ABOUT US|</a></li>
+                        <li><a href="{{ url_for('safe_girl_center') }}">SafeGirl CENTER |</a></li>
+                        <li><a href="{{ url_for('impact') }}">IMPACT |</a></li>
+                        <li><a href="{{ url_for('events') }}">EVENTS |</a></li>
+                        <li><a href="{{ url_for('our_books') }}">OUR BOOKS |</a></li>
+                        <li><a href="{{ url_for('donate') }}">DONATE |</a></li>
+                        <li><a href="{{ url_for('blog') }}">BLOG</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main">
+        <section>
+            <div class="sliders">
+                <div class="slides" id="slides">
+                    <img src="{{ url_for('static', filename='images/slides/slide1.jpg') }}" alt="Image 1">
+                    <img src="{{ url_for('static', filename='images/slides/slide2.jpg') }}" alt="Image 2">
+                    <img src="{{ url_for('static', filename='images/slides/slide3.jpg') }}" alt="Image 3">
+                    <img src="{{ url_for('static', filename='images/slides/slide4.jpg') }}" alt="Image 4">
+                    <img src="{{ url_for('static', filename='images/slides/slide1.5.jpg') }}" alt="Image 5">
+                    <img src="{{ url_for('static', filename='images/slides/slide6.jpg') }}" alt="Image 6">
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <br>
+
+        <div class="whoweare">
+            <div class="title1">
+            <h1>Who we Are</h1>
+            </div>
+        <div class="whoweare1">
+            <div class="cont1">
+                <img src="{{ url_for('static', filename='images/slides/sliide7.jpg') }}" alt="whoweare">
+            </div>
+            <div class="cont2">
+                <p>Welcome to Safe Girl, a dedicated initiative committed to creating a safer and more empowering world for women and girls in Kenya. At Safe Girl, we believe in the transformative power of community-driven initiatives to address gender-based violence, mental health challenges, and promote holistic well-being.</p>
+                <p>Safe Girl is not just an organization; it's a community of individuals, advocates, and supporters working collaboratively to make a positive impact. Our initiatives are designed with the input and involvement of the communities we serve, ensuring that the solutions are tailored to their specific needs.</p>
+            <button>DONATE</button>
+            </div>
+        </div>
+        </div>
+        <br>
+
+        <div class="initiatives">
+            <h1>Initiatives</h1>
+            <button>Learn more</button>
+            <div class="initiatives_content">
+                <div class="container1">
+                <a><img src="{{ url_for('static', filename='images/SAFE GIRL INITIATIVE/counseling-center.jpg') }}" alt="Counseling Center"></a>
+                    <p class="main">COUNSELING</p></a>
+                <a><img src=" {{ url_for('static', filename='images/SAFE GIRL INITIATIVE/stem.jpg') }}" alt="stem">
+                    <p class="main">STEM</p></a>
+                </div>
+                <div class="container2">
+                <a><img src="{{ url_for('static', filename='images/SAFE GIRL INITIATIVE/enttreprenuerships.jpg') }}" alt="entreprenuerships">
+                    <p class="main">ENTREPRENUERSHIP</p></a>
+                <a><img src="{{ url_for('static', filename='images/SAFE GIRL INITIATIVE/Table-Banking2-480-340.jpg') }}" alt="Table-Banking2-480-340">
+                    <br>
+                    <p class="main">ADVOCACY</p></a>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <div class="vision">
+            <h1>Our Vision</h1>
+            <p>Safe Girl Foundation envisions a world where every girl can thrive, free from the shackles of gender-based violence and inequality. Our vision is rooted in the belief that empowering girls is essential for building resilient communities and fostering societal transformation. We strive to create safe spaces that enable girls to access education, healthcare, and opportunities for personal growth. Through advocacy, awareness campaigns, and comprehensive support programs, we aspire to break down societal barriers, challenge harmful norms, and pave the way for a future where every girl can realize her full potential, contributing to a more just and equitable world. Safe Girl Foundation is committed to championing the rights and well-being of girls, creating lasting impact and empowering the leaders of tomorrow.</p>
+        </div>
+
+        <br>
+
+        <div class="impact">
+            <h1>Impact: The SafeGirl Achieve Program</h1>
+            <div class="impact_content">
+                <div class="counseling">
+                    <a><img src="{{ url_for('static', filename='images/SAFE GIRL IMPACT/SAFEGIRL FOUNDATION.jpg') }}" alt="Counseling"></a>
+                    <ul>
+                        <li>Providing individual and group counseling sessions to address a spectrum of mental health challenges.</li>
+                        <li>Implementing community workshops on stress management, emotional well-being, and resilience building.</li>
+                        <li>Collaborating with local healthcare providers to ensure a continuum of care for mental health support.</li>
+                        <li>Integrating technology to offer virtual counseling services for increased accessibility.</li>
+                    </ul>
+                </div>
+                <div class="STEM">
+                    <a><img src="{{ url_for('static', filename='images/SAFE GIRL IMPACT/safegirl foundation.png') }}" alt="STEM Training"></a>
+                    <ul>
+                        <li>Establishing STEM clubs in schools to foster a passion for science, technology, engineering, and mathematics.</li>
+                        <li>Organizing coding bootcamps and hackathons to encourage hands-on learning and innovation.</li>
+                        <li>Partnering with industry leaders to provide mentorship programs for aspiring STEM professionals.</li>
+                        <li>Offering scholarships for underprivileged students to pursue higher education in STEM fields.</li>
+                    </ul>
+                </div>
+                <div class="ENTREPRENUERSHIP">
+                    <a><img src="{{ url_for('static', filename='images/SAFE GIRL IMPACT/SAFEGIRL FOUNDATION ENTREPRENUERSHIP.png') }}" alt="Entrepreneurship"></a>
+                    <ul>
+                        <li>Conducting entrepreneurship training programs with a focus on sustainable business practices.</li>
+                        <li>Facilitating access to microfinance initiatives to kickstart small-scale entrepreneurial ventures.</li>
+                        <li>Establishing community-based markets to promote and sell products created by local entrepreneurs.</li>
+                        <li>Providing ongoing mentorship and networking opportunities for budding entrepreneurs.</li>
+                    </ul>
+                </div>
+                <div class="advocacy">
+                    <a><img src="{{ url_for('static', filename='images/SAFE GIRL IMPACT/SAFEGIRL FOUNDATION-2.png') }}" alt="Advocacy"></a>
+                    <ul>
+                        <li>Collaborating with legal experts to draft and propose legislation that addresses gender-based violence issues.</li>
+                        <li>Conducting awareness campaigns in schools and communities to promote a culture of respect and equality.</li>
+                        <li>Establishing safe spaces and support groups for survivors of gender-based violence.</li>
+                        <li>Collaborating with local authorities and policymakers to address safety concerns.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+        
+        <br>
+
+        <div class="blog">
+            <div class="blog0">
+            <h1>Latest Buzz from our Blog</h1>
+            <button><a href="{{ url_for('blog') }}">View all Blog posts<a></button>
+            </div>
+            <div class="blog1">
+                <img src="{{ url_for('static', filename='images/slides/Turkanawomen.jpg') }}" alt="Samburu women">
+                <img src="{{ url_for('static', filename='images/slides/girls.jpeg') }}" alt="school girls">
+            </div>
+        </div>
+       
+
+        <div class="announcements">
+            <div class="bttn">
+                <button>Announcements</button>
+            </div>
+            <div class="announce_content">
+                <div class="announce_cont1">
+                <p>In the heart of Turkana County, the Safe Girl Foundation embarked on a transformative journey, reaching out to girls and women in remote communities. Our mission was not only to provide support but also to empower these resilient women with the knowledge and skills needed to thrive in their communities. Here's a glimpse into our empowering visit.</p>
+                <a href="{{ url_for('blog') }}" class="show-more">Show More</a>
+                <button>DONATE</button>
+                </div>
+                <img class="announce_img" src="{{ url_for('static', filename='images/slides/Turkanawomen.jpg') }}" alt="Turkanawomen">
+            </div>
+        </div>
+        <br>
+
+        <div class="info">
+            <div class="info1">
+            <p><a href="{{ url_for('about_us') }}">About Us</a>| <a href="{{ url_for('about_us') }}">Contact Us</a>| <a href="privacypolicy.html">Privacy Policy</a></p>
+            </div>
+            <div class="info2">
+                <p>SafeGirl Foundation is a community based charitable organisation</p>
+                <p>SafeGirl Foundation Kenya</p>
+                <p>P.O Box 1398-20100</p>
+                <p>Nakuru, Kenya</p>
+            </div>
+            <div class="info3">
+                <a target="_blank" href="{{ url_for('donate') }}"><button>Make a Donation</button></a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <p>SafeGirl Foundation, 2024, All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
