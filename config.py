@@ -1,4 +1,4 @@
-MYSQL_DATABASE_USER = 'cherono@123'
+MYSQL_DATABASE_USER = 'mac@localhost'
 MYSQL_DATABASE_PASSWORD = '888'
 MYSQL_DATABASE_DB = 'donation_database'
 MYSQL_DATABASE_HOST = 'localhost'

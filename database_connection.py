@@ -2,7 +2,7 @@ import pymysql
 
 donation_db_connection = pymysql.connect(
     host='localhost',
-    user='cherono@123',
+    user='mac',
     password='888',
     database='donation_database',
     port=3306,

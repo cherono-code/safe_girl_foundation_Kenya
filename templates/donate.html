@@ -11,7 +11,7 @@
     <header>
         <div class="main">
             <div class="logo">
-            <a><img src="{{ url_for('static', filename='images/safegirllogo.jpg') }}" width="200px" height="60px" alt="our logo"></a>
+            <a href="{{ url_for('safegirlfoundationke') }}"><img src="{{ url_for('static', filename='images/safegirllogo.jpg') }}" width="200px" height="60px" alt="our logo"></a>
             </div>
             <div class="navlinks">
                 <nav>
@@ -57,19 +57,19 @@
                 <h1>Personal Information</h1>
                  <!-- Donation Form -->
                  <div class="donation-form">
-                 <form id="donationForm" action="/saveDonor" method="post">
-                    <label for="FirstName">First Name:</label>
-                    <input type="text" id="fullName" name="fullName" required>
-                    <br>
-                    <label for="LastName">Last Name:</label>
-                    <input type="text" id="fullName" name="fullName" required>
-                    <br>
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" required>
-                    <br>
-                    <label for="phoneNumber">Phone Number:</label>
-                    <input type="tel" id="phoneNumber" name="phoneNumber">
-                    <br>
+                    <form id="donationForm" action="/donate" method="post">
+                        <label for="firstName">First Name:</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                        <br>
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                        <br>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                        <br>
+                        <label for="phoneNumber">Phone Number:</label>
+                        <input type="tel" id="phoneNumber" name="phoneNumber">
+                        <br>
                     <label>Donation Type:</label>
                     <br>
                     <div class="donor_options">

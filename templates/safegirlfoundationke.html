@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="safe, girl, foundation, kenya">
+    <title>SAFEGIRL FOUNDATION | KENYA</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <a href="{{ url_for('safegirlfoundationke') }}"><img src="{{ url_for('static', filename='images/safegirllogo.jpg') }}" alt="our logo"></a>
+            </div>
+            <div class="navlinks">
+                <nav>
+                    <ul>
+                        <li><a href="{{ url_for('home') }}">HOME |</a></li>
+                        <li><a href="{{ url_for('about_us') }}">ABOUT US|</a></li>
+                        <li><a href="{{ url_for('safe_girl_center') }}">SafeGirl CENTER |</a></li>
+                        <li><a href="{{ url_for('impact') }}">IMPACT |</a></li>
+                        <li><a href="{{ url_for('events') }}">EVENTS |</a></li>
+                        <li><a href="{{ url_for('our_books') }}">OUR BOOKS |</a></li>
+                        <li><a href="{{ url_for('donate') }}">DONATE |</a></li>
+                        <li><a href="{{ url_for('blog') }}">BLOG</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="intro" class="cover-image">
+            <div class="intro-content">
+                <div>
+                <h1>Welcome to SafeGirl Foundation Kenya, Empowering Girls through mental health support, climate action, STEM education, GBV advocacy, and sustainable development.</h1>
+                </div>
+                <div>
+                <a href="{{ url_for('impact') }}" class="btn-explore">Explore Our Impact</a>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Key Features Section -->
+        
+        <section id="key-features">
+            <h1>FEATURES</h1>
+            <div class="feature">
+                <div class="feature-image">
+                    <img src="{{ url_for('static', filename='images/project screenshots/home.jpg') }}" alt="Homepage">
+                </div>
+                <div class="feature-text">
+                    <h2>HOME</h2>
+                    <p>It serves as the initial point of contact for visitors, offering an overview of the foundation's mission, initiatives, impact, and ways to get involved. It aims to inform, inspire, and encourage visitors to support the foundation.</p>
+                </div>
+            </div>
+        <hr class="border">
+            <div class="feature">
+                <div class="feature-image">
+                <img src="{{ url_for('static', filename='images/project screenshots/abouty.jpg') }}" alt="About Us">
+                </div>
+                <div class="feature-text">
+                <h2>ABOUT US</h2>
+                <p>This feature provides detailed information about the organization's mission, values, history, and key activities.</p>
+                </div>
+            </div>
+        <hr class="border">
+            <div class="feature">
+                <div class="feature-image">
+                <img src="{{ url_for('static', filename='images/project screenshots/donation.jpg') }}" alt="Donation">
+                </div>
+                <div class="feature-text">
+                <h2>DONATION</h2>
+                <p>This feature is designed to encourage and facilitate donations to support the foundation's initiatives.</p>
+                </div>
+            </div>
+        </section>
+    
+        <!-- About Section -->
+        <section id="about">
+        <div class="profile">
+            <div class="inspiration">
+            <h2>About</h2>
+            <p> The inspiration for this project stems from my personal experiences growing up in Kenya and my deep commitment to mentorship and supporting girls from needy backgrounds. I have witnessed firsthand the significant challenges our communities face, from the lack of mental health resources to the urgent need for environmental sustainability. I believe in the immense potential that lies within our youth, especially girls, if given the right opportunities in STEM. This project is also an integral part of my Portfolio Project for Holberton School, where we strive to develop impactful solutions to real-world problems. By combining my personal dedication and the skills acquired through my education, I aim to create meaningful change and empower the next generation of young women to rise above their circumstances. <a href="https://www.holbertonschool.com" target="_blank">Holberton School</a>, where we strive to create impactful solutions for real-world problems.</p>
+            <p>Timeline:</p>
+            <ul>
+                <li>September 2023: Conceptualization and initial research.</li>
+                <li>October 2023: Team formation and project planning.</li>
+                <li>November 2023: Development of key features and community outreach.</li>
+                <li>December 2023: Launch of the project and initial impact assessment.</li>
+            </ul>
+            </div>
+            <div class="team">
+            <h3>Project Lead</h3>
+            <div class="team-member">
+                <figure class="projectlead">
+                    <img src="{{ url_for('static', filename='images/logos staff/projectlead.jpg') }}" alt="Co-founder">
+                    <figcaption>Daisy Cherono</figcaption>
+                </figure>
+                <p>
+                    <a href="https://linkedin.com/in/daisy-cherono-45325026a/" target="_blank">LinkedIn</a> |
+                    <a href="https://github.com/cherono-code" target="_blank">GitHub</a> |
+                    <a href="https://twitter.com/" target="_blank">Twitter</a>
+                </p>
+            </div>
+            <!-- Add more team members when needed -->
+            <p><a href="https://github.com/cherono-code/safe_girl_foundation_Kenya" target="_blank">GitHub Repository</a></p>
+            </div>
+        </div>
+        </section>
+    
+        <!-- Video Section -->
+        <section id="video">
+            <h2>Our Story and Features</h2>
+            <video controls>
+                <source src="your-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>This video introduces our team, explains the story behind our project, walks through our key features, and discusses our future plans.</p>
+        </section>
+    </main>
+</body>
+</html>
